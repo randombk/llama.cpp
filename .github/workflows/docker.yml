@@ -40,6 +40,8 @@ jobs:
           - { tag: "server-rocm", dockerfile: ".devops/server-rocm.Dockerfile", platforms: "linux/amd64,linux/arm64" }
           - { tag: "light-intel", dockerfile: ".devops/main-intel.Dockerfile", platforms: "linux/amd64" }
           - { tag: "server-intel", dockerfile: ".devops/server-intel.Dockerfile", platforms: "linux/amd64" }
+
+          # Custom image builds
           - { tag: "server-openblas", dockerfile: ".devops/server-openblas.Dockerfile", platforms: "linux/amd64,linux/arm64" }
     steps:
       - name: Check out the repo
